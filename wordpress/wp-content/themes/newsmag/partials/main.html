@@ -1,0 +1,26 @@
+    <article ng-repeat="post in posts" class="newsmag-blog-post-layout post type-post status-publish format-standard has-post-thumbnail hentry category-categorizes-1">
+	<div class="row">
+		<div class="col-sm-4 col-xs-12">
+			<div class="newsmag-image">
+				<a href="/{{post.slug}}">
+					<img width="560" height="416" src="{{post.better_featured_image.media_details.sizes.thumbnail.source_url}}" class="attachment-newsmag-recent-post-big size-newsmag-recent-post-big wp-post-image" alt="" srcset="{{post.better_featured_image.source_url}} 1600w, {{post.better_featured_image.media_details.sizes.medium.source_url}} 300w, {{post.better_featured_image.media_details.sizes.large.source_url}} 1024w, {{post.better_featured_image.media_details.sizes.medium_large.source_url}} 768w" sizes="(max-width: 560px) 100vw, 560px">
+				</a>
+				<span class="newsmag-post-box-category">
+					<a href="/{{post.slug}}">{{post.title.rendered}}</a>
+				</span>
+			</div>
+		</div>
+		<div class="col-sm-8 col-xs-12">
+			<div class="newsmag-title">
+				<h3>
+					<a href="/{{post.slug}}">{{post.title.rendered}}</a>
+				</h3>
+				<div class="meta">
+					<span class="nmicon-clock-o"></span>{{post.date | date:'longDate'}}
+				</div>
+				<div class="newsmag-content entry-content">
+					<p ng-bind-html="post.excerpt.rendered"></p>					
+				</div>
+			</div>
+		</div>
+	</article>
