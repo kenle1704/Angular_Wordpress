@@ -10,3 +10,5 @@ https://chartio.com/resources/tutorials/how-to-grant-all-privileges-on-a-databas
 6. login to wp by using account below 
 user: wpAdmin
 pw: zh3D^f9gVzlONgji)i
+7 in your local machine, edit host file to pointing to the server ip 
+https://docs.rackspace.com/support/how-to/modify-your-hosts-file/
